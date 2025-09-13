@@ -43,20 +43,20 @@
 
 **A continuación, se detalla la estructura principal del proyecto, con una breve descripción de cada archivo o carpeta.**
 
-* <span class="selected">app/src/main/java/com/evalfinal/books2/</span>`: Contiene la lógica principal de la aplicación.
-  * `<span class="selected">MainActivity.java</span>`: La actividad principal que gestiona el contenedor de fragmentos y la barra de navegación.
-  * `<span class="selected">SplashFragment.java</span>`: Lógica de la pantalla de bienvenida.
-  * `<span class="selected">BookListFragment.java</span>`: Lógica del listado de libros.
-  * `<span class="selected">BookDetailFragment.java</span>`: Lógica de la vista de detalles de un libro.
-  * `<span class="selected">CreditsFragment.java</span>`: Lógica de la vista de créditos.
-  * `<span class="selected">Book.java</span>`: Clase de modelo que define un objeto Libro.
-* `<span class="selected">app/src/main/res/layout/</span>`: Contiene los archivos XML para las interfaces de usuario.
-  * `<span class="selected">activity_main.xml</span>`: El diseño de la actividad principal.
-  * `<span class="selected">fragment_splash.xml</span>`: Diseño de la pantalla de inicio.
-  * `<span class="selected">fragment_book_list.xml</span>`: Diseño de la lista de libros.
-  * `<span class="selected">fragment_book_detail.xml</span>`: Diseño de la pantalla de detalles.
-  * `<span class="selected">fragment_credits.xml</span>`: Diseño de la pantalla de créditos.
-* `<span class="selected">app/src/main/res/navigation/</span>`: Contiene el gráfico de navegación.
-  * `<span class="selected">nav.xml</span>`: Define las transiciones y los destinos de los fragmentos.
-* `<span class="selected">app/src/main/res/menu/</span>`: Contiene el menú para la barra de navegación.
-  * `<span class="selected">menu_bottom_nav.xml</span>`: Define los íconos y títulos de la barra de navegación inferior.
+* <span class="selected">app/src/main/java/com/evalfinal/books2/</span>: Contiene la lógica principal de la aplicación.
+  * <span class="selected">MainActivity.java</span>: La actividad principal que gestiona el contenedor de fragmentos y la barra de navegación.
+  * <span class="selected">SplashFragment.java</span>: Lógica de la pantalla de bienvenida.
+  * <span class="selected">BookListFragment.java</span>: Lógica del listado de libros.
+  * <span class="selected">BookDetailFragment.java</span>: Lógica de la vista de detalles de un libro.
+  * <span class="selected">CreditsFragment.java</span>: Lógica de la vista de créditos.
+  * <span class="selected">Book.java</span>: Clase de modelo que define un objeto Libro.
+* <span class="selected">app/src/main/res/layout/</span>: Contiene los archivos XML para las interfaces de usuario.
+  * <span class="selected">activity_main.xml</span>: El diseño de la actividad principal.
+  * <span class="selected">fragment_splash.xml</span>: Diseño de la pantalla de inicio.
+  * <span class="selected">fragment_book_list.xml</span>: Diseño de la lista de libros.
+  * <span class="selected">fragment_book_detail.xml</span>: Diseño de la pantalla de detalles.
+  * <span class="selected">fragment_credits.xml</span>: Diseño de la pantalla de créditos.
+* <span class="selected">app/src/main/res/navigation/</span>: Contiene el gráfico de navegación.
+  * <span class="selected">nav.xml</span>: Define las transiciones y los destinos de los fragmentos.
+* <span class="selected">app/src/main/res/menu/</span>: Contiene el menú para la barra de navegación.
+  * <span class="selected">menu_bottom_nav.xml</span>: Define los íconos y títulos de la barra de navegación inferior.
