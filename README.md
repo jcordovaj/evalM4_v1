@@ -52,15 +52,15 @@
 
     * **Manejo y Optimización de Assets y Recursos:**
         - En Android, la gestión de los **'assets'**, es fundamental para garantizar que la aplicación sea eficiente y visualmente atractiva en una amplia variedad de       dispositivos. Los recursos se almacenan en directorios específicos dentro de la carpeta res/:
-          + Imágenes (res/drawable/ y res/mipmap/):
-              + res/drawable/ se usa para imágenes que se utilizan dentro de la interfaz de usuario (como las portadas de los libros).
-              + res/mipmap/ se utiliza para los íconos de la aplicación que se muestran en el lanzador del dispositivo.
-            - Diseños de páginas (res/layout/): Contiene los archivos XML que definen la estructura y el diseño de la interfaz de usuario.
-        La optimización de los assets es un paso crítico en el proceso de desarrollo. Es importante por las siguientes razones:
-            - Rendimiento y Consumo de Memoria: Utilizar imágenes no optimizadas o de alta resolución innecesariamente puede causar problemas de rendimiento, como el consumo excesivo de memoria RAM, lo que puede llevar a errores de OutOfMemoryError y a cierres inesperados de la aplicación.
-            - Tamaño de la APK: Los assets grandes y sin comprimir aumentan el tamaño del archivo de la aplicación (APK), lo que puede desalentar a los usuarios a descargarla o comprarla, especialmente si tienen conexiones lentas o espacio de almacenamiento limitado. 
-            - Experiencia de Usuario: Una aplicación lenta en cargar recursos ofrece una experiencia de usuario deficiente. La optimización asegura que la interfaz se muestre de forma fluida y rápida en todos los dispositivos.
-        Para optimizar, se recomienda utilizar herramientas de compresión de imágenes, convertir imágenes al formato WebP y proporcionar diferentes versiones de un mismo recurso para distintas densidades de pantalla (mdpi, hdpi, xhdpi, etc.).
+          - Imágenes (res/drawable/ y res/mipmap/):
+              - res/drawable/ se usa para imágenes que se utilizan dentro de la interfaz de usuario (como las portadas de los libros).
+              - res/mipmap/ se utiliza para los íconos de la aplicación que se muestran en el lanzador del dispositivo.
+          - Diseños de páginas (res/layout/): Contiene los archivos XML que definen la estructura y el diseño de la interfaz de usuario.
+        - La optimización de los assets es un paso crítico en el proceso de desarrollo. Es importante por las siguientes razones:
+          - Rendimiento y Consumo de Memoria: Utilizar imágenes no optimizadas o de alta resolución innecesariamente puede causar problemas de rendimiento, como el consumo excesivo de memoria RAM, lo que puede llevar a errores de OutOfMemoryError y a cierres inesperados de la aplicación.
+          - Tamaño de la APK: Los assets grandes y sin comprimir aumentan el tamaño del archivo de la aplicación (APK), lo que puede desalentar a los usuarios a descargarla o comprarla, especialmente si tienen conexiones lentas o espacio de almacenamiento limitado. 
+          - Experiencia de Usuario: Una aplicación lenta en cargar recursos ofrece una experiencia de usuario deficiente. La optimización asegura que la interfaz se muestre de forma fluida y rápida en todos los dispositivos.
+          - Para optimizar, se recomienda utilizar herramientas de compresión de imágenes, convertir imágenes al formato WebP y proporcionar diferentes versiones de un mismo recurso para distintas densidades de pantalla (mdpi, hdpi, xhdpi, etc.).
 
     * **Gestión del Código Fuente usando GitHub/GitLab:**
         - La gestión del código fuente en este proyecto, se llevó a cabo utilizando Git y GitHub para asegurar un control de versiones robusto y mantener el repositorio en un estado óptimo.
