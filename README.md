@@ -29,6 +29,13 @@
   <img src="scrapbook/ConfigInicialManifest.png" alt="Verificar configuración inicial del Manifest" width="500"/>
 </p>
 
+   - **Paso 5:** Agregamos el recurso navigation, con nombre “nav”, y se agregan las librerías.
+<p float="center">
+  <img src="scrapbook/AgregarRecursoNavigation.png" alt="Verificar configuración inicial del Manifest" width="500"/>
+  <img src="scrapbook/AgregarRecursoNavigation2.png" alt="Verificar configuración inicial del Manifest" width="500"/> 
+</p>
+
+
 c) Manejo y Optimización de Assets y Recursos
 La gestión de assets en Android es fundamental para garantizar que la aplicación sea eficiente y visualmente atractiva en una amplia variedad de dispositivos. Los recursos se almacenan en directorios específicos dentro de la carpeta res/:
 
