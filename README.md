@@ -17,12 +17,12 @@
 ## 2. Capturas de Pantalla
 
 <p float="left">
-  <img src="scrapbook/vista_main.png" alt="Pantalla inicial" width="200"/>
-  <img src="scrapbook/vista_listado_libros.png" alt="Listado con los 3 libros" width="200"/>
-  <img src="scrapbook/vista_detalle_libro1.png" alt="Detalle libro 1" width="200"/>
-  <img src="scrapbook/vista_detalle_libro2.png" alt="Detalle libro 2" width="200"/>
-  <img src="scrapbook/vista_detalle_libro3.png" alt="Detalle libro 3" width="200"/>
-  <img src="scrapbook/vista_creditos.png" alt="Credito con logo y dearrollador" width="200"/>
+  <img src="scrapbook/vista_main.png" alt="Pantalla inicial" width="150"/>
+  <img src="scrapbook/vista_listado_libros.png" alt="Listado con los 3 libros" width="150"/>
+  <img src="scrapbook/vista_detalle_libro1.png" alt="Detalle libro 1" width="150"/>
+  <img src="scrapbook/vista_detalle_libro2.png" alt="Detalle libro 2" width="150"/>
+  <img src="scrapbook/vista_detalle_libro3.png" alt="Detalle libro 3" width="150"/>
+  <img src="scrapbook/vista_creditos.png" alt="Credito con logo y dearrollador" width="150"/>
 </p>
 
 ## 2. Conceptos de Diseño y Arquitectura
