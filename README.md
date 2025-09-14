@@ -37,12 +37,17 @@
 </p>
 
    - **Paso 6:** Crear carpeta “MENU” en “RES”.
-
 <p float="center">
   <img src="scrapbook/CrearRecursoMenu.png" alt="Verificar configuración inicial del Manifest" width="500"/>
   <img src="scrapbook/CrearRecursoMenu2.png" alt="Verificar configuración inicial del Manifest" width="500"/> 
 </p>
 
+   - **Paso 7:** Sobre el recurso “menu” + botón derecho, elegir “New resource File”, para crear la barra de navegación.
+<p float="center">
+  <img src="scrapbook/CrearBarraNavegacion.png" alt="Verificar configuración inicial del Manifest" width="500"/>
+  <img src="scrapbook/CrearBarraNavegacion2.png" alt="Verificar configuración inicial del Manifest" width="500"/> 
+  <img src="scrapbook/CrearBarraNavegacion3.png" alt="Verificar configuración inicial del Manifest" width="500"/>  
+</p>
 
 c) Manejo y Optimización de Assets y Recursos
 La gestión de assets en Android es fundamental para garantizar que la aplicación sea eficiente y visualmente atractiva en una amplia variedad de dispositivos. Los recursos se almacenan en directorios específicos dentro de la carpeta res/:
