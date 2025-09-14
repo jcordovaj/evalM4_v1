@@ -50,32 +50,34 @@
 
 - **Elementos de Configuración del Proyecto:**
 
-    * **Manejo y Optimización de Assets y Recursos:**
-        - En Android, la gestión de los **'assets'**, es fundamental para garantizar que la aplicación sea eficiente y visualmente atractiva en una amplia variedad de       dispositivos. Los recursos se almacenan en directorios específicos dentro de la carpeta res/:
-          - Imágenes (res/drawable/ y res/mipmap/):
-              - res/drawable/ se usa para imágenes que se utilizan dentro de la interfaz de usuario (como las portadas de los libros).
-              - res/mipmap/ se utiliza para los íconos de la aplicación que se muestran en el lanzador del dispositivo.
-          - Diseños de páginas (res/layout/): Contiene los archivos XML que definen la estructura y el diseño de la interfaz de usuario.
-        - La optimización de los assets es un paso crítico en el proceso de desarrollo. Es importante por las siguientes razones:
-          - Rendimiento y Consumo de Memoria: Utilizar imágenes no optimizadas o de alta resolución innecesariamente puede causar problemas de rendimiento, como el consumo excesivo de memoria RAM, lo que puede llevar a errores de OutOfMemoryError y a cierres inesperados de la aplicación.
-          - Tamaño de la APK: Los assets grandes y sin comprimir aumentan el tamaño del archivo de la aplicación (APK), lo que puede desalentar a los usuarios a descargarla o comprarla, especialmente si tienen conexiones lentas o espacio de almacenamiento limitado. 
-          - Experiencia de Usuario: Una aplicación lenta en cargar recursos ofrece una experiencia de usuario deficiente. La optimización asegura que la interfaz se muestre de forma fluida y rápida en todos los dispositivos.
-        - Para optimizar, se recomienda utilizar herramientas de compresión de imágenes, convertir imágenes al formato WebP y proporcionar diferentes versiones de un mismo recurso para distintas densidades de pantalla (mdpi, hdpi, xhdpi, etc.).
+  - **Manejo y Optimización de Assets y Recursos:**
 
-    * **Gestión del Código Fuente usando GitHub/GitLab:**
-        - La gestión del código fuente en este proyecto, se llevó a cabo utilizando Git y GitHub para asegurar un control de versiones robusto y mantener el repositorio en un estado óptimo.
-          + Repositorio Remoto: El proyecto se aloja en un repositorio remoto de GitHub, lo que facilita el seguimiento de los cambios y la colaboración.
-          + Rama Principal (main): Se utilizó una única rama principal llamada main. Dado que este es un proyecto de desarrollo individual, una rama única es suficiente para mantener un historial de código lineal y evitar la complejidad de fusionar múltiples ramas.
+    - En Android, la gestión de los **'assets'**, es fundamental para garantizar que la aplicación sea eficiente y visualmente atractiva en una amplia variedad de dispositivos. Los recursos se almacenan en directorios específicos dentro de la carpeta res/:
+      - Imágenes (res/drawable/ y res/mipmap/):
+        - res/drawable/ se usa para imágenes que se utilizan dentro de la interfaz de usuario (como las portadas de los libros).
+        - res/mipmap/ se utiliza para los íconos de la aplicación que se muestran en el lanzador del dispositivo.
+      - Diseños de páginas (res/layout/): Contiene los archivos XML que definen la estructura y el diseño de la interfaz de usuario.
+    - La optimización de los assets es un paso crítico en el proceso de desarrollo. Es importante por las siguientes razones:
+      - Rendimiento y Consumo de Memoria: Utilizar imágenes no optimizadas o de alta resolución innecesariamente puede causar problemas de rendimiento, como el consumo excesivo de memoria RAM, lo que puede llevar a errores de OutOfMemoryError y a cierres inesperados de la aplicación.
+      - Tamaño de la APK: Los assets grandes y sin comprimir aumentan el tamaño del archivo de la aplicación (APK), lo que puede desalentar a los usuarios a descargarla o comprarla, especialmente si tienen conexiones lentas o espacio de almacenamiento limitado.
+      - Experiencia de Usuario: Una aplicación lenta en cargar recursos ofrece una experiencia de usuario deficiente. La optimización asegura que la interfaz se muestre de forma fluida y rápida en todos los dispositivos.
+    - Para optimizar, se recomienda utilizar herramientas de compresión de imágenes, convertir imágenes al formato WebP y proporcionar diferentes versiones de un mismo recurso para distintas densidades de pantalla (mdpi, hdpi, xhdpi, etc.).
 
-    * **Prácticas de Seguridad y Mantenimiento:**
-        - Uso de '.gitignore', básico para la seguridad del repositorio. Se configuró para excluir archivos generados automáticamente por el IDE (como archivos de compilación, caché y de depuración) y así evitar subir información sensible o innecesaria. Esto mantiene el repositorio limpio y liviano.
-        - Commits periódicos: Se intentó realizar commits pequeños y significativos, cada uno con un mensaje descriptivo que explicaba el propósito de los cambios. Esto permite revisar el historial del proyecto y hacer un roll-back, si es necesario.
+  - **Gestión del Código Fuente usando GitHub/GitLab:**
+
+    - La gestión del código fuente en este proyecto, se llevó a cabo utilizando Git y GitHub para asegurar un control de versiones robusto y mantener el repositorio en un estado óptimo.
+      - Repositorio Remoto: El proyecto se aloja en un repositorio remoto de GitHub, lo que facilita el seguimiento de los cambios y la colaboración.
+      - Rama Principal (main): Se utilizó una única rama principal llamada main. Dado que este es un proyecto de desarrollo individual, una rama única es suficiente para mantener un historial de código lineal y evitar la complejidad de fusionar múltiples ramas.
+
+  - **Prácticas de Seguridad y Mantenimiento:**
+    - Uso de '.gitignore', básico para la seguridad del repositorio. Se configuró para excluir archivos generados automáticamente por el IDE (como archivos de compilación, caché y de depuración) y así evitar subir información sensible o innecesaria. Esto mantiene el repositorio limpio y liviano.
+    - Commits periódicos: Se intentó realizar commits pequeños y significativos, cada uno con un mensaje descriptivo que explicaba el propósito de los cambios. Esto permite revisar el historial del proyecto y hacer un roll-back, si es necesario.
 
 ## 2. Funcionamiento de la Aplicación
 
 **La aplicación es una plataforma sencilla para visualizar un catálogo de libros. El flujo de usuario principal es el siguiente:**
 
-  - **Pantalla de inicio:** Al abrir la aplicación, se muestra una pantalla de bienvenida, con un logo centrado y botón. Al presionar el botón "Ir", el usuario es dirigido a la lista de libros (3 CardViews).
+- **Pantalla de inicio:** Al abrir la aplicación, se muestra una pantalla de bienvenida, con un logo centrado y botón. Al presionar el botón "Ir", el usuario es dirigido a la lista de libros (3 CardViews).
 - **Lista de Libros:** En esta pantalla, se presenta un listado de libros con su título, autor y una breve descripción. Cada elemento tiene un botón para ver más detalles.
 - **Detalle del Libro:** Al seleccionar un libro, se abre una nueva pantalla con información ampliada, como la sinopsis completa y una imagen más grande.
 - **Barra de Navegación:** La aplicación incluye una barra de navegación inferior que permite al usuario moverse fácilmente entre las vistas de "Inicio", "Libros" y "Créditos".

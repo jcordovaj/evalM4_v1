@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/splashFragment">
+
+    <!-- Fragmento de inicio -->
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.evalfinal.evalm4.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_bookListFragment"
+            app:destination="@id/bookListFragment" />
+    </fragment>
+
+    <!-- Fragmento para la lista de libros -->
+    <fragment
+        android:id="@+id/bookListFragment"
+        android:name="com.evalfinal.evalm4.BookListFragment"
+        android:label="fragment_book_list"
+        tools:layout="@layout/fragment_book_list">
+        <action
+            android:id="@+id/action_bookListFragment_to_bookDetailFragment"
+            app:destination="@id/bookDetailFragment" />
+    </fragment>
+
+    <!-- Fragmento para los detalles de un libro -->
+    <fragment
+        android:id="@+id/bookDetailFragment"
+        android:name="com.evalfinal.evalm4.BookDetailFragment"
+        android:label="BookDetailFragment"
+        tools:layout="@layout/fragment_book_detail">
+        <argument
+            android:name="book"
+            app:argType="com.evalfinal.evalm4.Book" />
+    </fragment>
+
+    <!-- Fragmento para los créditos -->
+    <fragment
+        android:id="@+id/creditsFragment"
+        android:name="com.evalfinal.evalm4.CreditsFragment"
+        android:label="CreditsFragment"
+        tools:layout="@layout/fragment_credits" />
+</navigation>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">booksFinder</string>
+    <string name="ir">Ir a Books</string>
+    <string name="logo_de_app">Peras con Manzanas</string>
+    <string name="details_button_text">Ver Detalle</string>
+    <string name="book_cover_description">Título Libro</string>
+</resources>
