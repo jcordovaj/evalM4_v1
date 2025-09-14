@@ -7,11 +7,14 @@
 * **Contexto y Configuración de un Nuevo Proyecto:**
 
   - **Paso 1:** Crear el repo usando Github Desktop.
-<p float="left">
-  <img src="scrapbook/crearRepo_GithubDesktop.PNG" alt="Diagrama de navegación" width="500"/>
+<p float="center">
+  <img src="scrapbook/crearRepo_GithubDesktop.PNG" alt="Crear Repo" width="500"/>
 </p>
   
-
+ - **Paso 2:** Crear un nuevo proyecto, en este caso usamos una ”Empty Views Activity”, vista de actividad vacía.
+<p float="center">
+  <img src="scrapbook/CrearProyectoDesdeActividadVacia.png" alt="Crear Empty View" width="500"/>
+</p>
 Para configurar un nuevo proyecto en Android Studio, el procedimiento estándar es sencillo y se centra en establecer una base sólida para el desarrollo.
 
 Abrir Android Studio y Seleccionar un Nuevo Proyecto: Al iniciar el IDE, se elige la opción "New Project". Esto abre un asistente que guía al usuario a través de varias plantillas.
