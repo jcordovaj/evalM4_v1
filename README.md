@@ -14,6 +14,17 @@
 * **Detalle del Libro:** Al seleccionar un libro, se abre una nueva pantalla con información ampliada, como la sinopsis completa y una imagen más grande.
 * **Barra de Navegación:** La aplicación incluye una barra de navegación inferior que permite al usuario moverse fácilmente entre las vistas de "Inicio", "Libros" y "Créditos".
 
+## 2. Capturas de Pantalla
+
+<p float="left">
+  <img src="scrapbook/vista_main.png" alt="Pantalla inicial" width="200"/>
+  <img src="scrapbook/vista_listado_libros.png" alt="Listado con los 3 libros" width="200"/>
+  <img src="scrapbook/vista_detalle_libro1.png" alt="Detalle libro 1" width="200"/>
+  <img src="scrapbook/vista_detalle_libro2.png" alt="Detalle libro 2" width="200"/>
+  <img src="scrapbook/vista_detalle_libro3.png" alt="Detalle libro 3" width="200"/>
+  <img src="scrapbook/vista_creditos.png" alt="Credito con logo y dearrollador" width="200"/>
+</p>
+
 ## 2. Conceptos de Diseño y Arquitectura
 
 **El desarrollo de esta aplicación se basó en el principio de separar la lógica de la interfaz de usuario, garantizando un código limpio, modular y fácil de mantener.**
