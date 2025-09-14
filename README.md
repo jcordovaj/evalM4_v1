@@ -6,7 +6,7 @@
 
 * **Contexto y Configuración de un Nuevo Proyecto:**
 
-* **Paso 1:** Crear el repo usando Github Desktop.
+  - **Paso 1:** Crear el repo usando Github Desktop.
 <p float="left">
   <img src="scrapbook/crearRepo_GithubDesktop.PNG" alt="Diagrama de navegación" width="500"/>
 </p>
