@@ -92,8 +92,7 @@
 1. **Clonar el repositorio:**
 
    ```bash
-
-   https://github.com/jcordovaj/EvalM7.git
+   https://github.com/jcordovaj/evalM4_v1.git
    
    ```
 
