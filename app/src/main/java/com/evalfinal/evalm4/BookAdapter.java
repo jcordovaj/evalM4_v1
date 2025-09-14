@@ -72,10 +72,10 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
 
         public BookViewHolder(@NonNull View itemView) {
             super(itemView);
-            bookImg          = itemView.findViewById(R.id.iv_book_img);
-            bookTitulo       = itemView.findViewById(R.id.tv_book_titulo);
-            fraseCorta = itemView.findViewById(R.id.tv_frase_corta);
-            btnVerDetalle    = itemView.findViewById(R.id.btn_ver_detalles);
+            bookImg       = itemView.findViewById(R.id.iv_book_img);
+            bookTitulo    = itemView.findViewById(R.id.tv_book_titulo);
+            fraseCorta    = itemView.findViewById(R.id.tv_frase_corta);
+            btnVerDetalle = itemView.findViewById(R.id.btn_ver_detalles);
 
             // Listener para el botón de "Más detalles"
             btnVerDetalle.setOnClickListener(v -> {
