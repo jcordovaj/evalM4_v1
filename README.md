@@ -34,8 +34,8 @@
 * **View Binding:** Para interactuar con los elementos de la interfaz de usuario (<span class="selected">TextViews</span>, <span class="selected">ImageViews</span>, etc.), se usó  **View Binding**. Esto elimina la necesidad de **<span class="selected">findViewById</span>**, reduciendo la posibilidad de errores y haciendo el código más conciso.
 * **Flujo de Navegación Personalizado:** Se implementó una lógica de navegación manual en la <span class="selected">MainActivity</span> para controlar la pila de navegación (<span class="selected">back stack</span>). Esto permite que los botones de la barra de navegación actúen como puntos de partida, asegurando que la aplicación no se "pierda" al cambiar entre vistas.
 <p float="left">
-  <img src="scrapbook/EvalM4_diagrama_clases.png" alt="Pantalla inicial" width="300"/>
-  <img src="scrapbook/EvalM4_diagrama_nav.drawio.png" alt="Listado con los 3 libros" width="150"/>
+  <img src="scrapbook/EvalM4_diagrama_clases.png" alt="Diagrama de clases" width="300"/>
+  <img src="scrapbook/EvalM4_digrama_nav.drawio.png" alt="Diagrama de navegación" width="150"/>
 </p>
 
 ## 3. Guía de Ejecución del Proyecto
