@@ -63,8 +63,8 @@
         Para optimizar, se recomienda utilizar herramientas de compresión de imágenes, convertir imágenes al formato WebP y proporcionar diferentes versiones de un mismo recurso para distintas densidades de pantalla (mdpi, hdpi, xhdpi, etc.).
 
     * **Gestión del Código Fuente usando GitHub/GitLab:**
-        La gestión del código fuente en este proyecto, se llevó a cabo utilizando Git y GitHub para asegurar un control de versiones robusto y mantener el repositorio en un estado óptimo.
-            - Repositorio Remoto: El proyecto se aloja en un repositorio remoto de GitHub, lo que facilita el seguimiento de los cambios y la colaboración.
+        - La gestión del código fuente en este proyecto, se llevó a cabo utilizando Git y GitHub para asegurar un control de versiones robusto y mantener el repositorio en un estado óptimo.
+          + Repositorio Remoto: El proyecto se aloja en un repositorio remoto de GitHub, lo que facilita el seguimiento de los cambios y la colaboración.
             - Rama Principal (main): Se utilizó una única rama principal llamada main. Dado que este es un proyecto de desarrollo individual, una rama única es suficiente para mantener un historial de código lineal y evitar la complejidad de fusionar múltiples ramas.
 
     * **Prácticas de Seguridad y Mantenimiento:**
