@@ -33,9 +33,9 @@
 * **Navegación Segura (Android Jetpack Navigation):** Se utilizó el componente **Navigation de Android Jetpack** para gestionar las transiciones entre pantallas. Esto asegura que la navegación sea segura y que los datos se pasen correctamente entre fragmentos (<span class="selected">BookListFragment</span> a <span class="selected">BookDetailFragment</span> utilizando el objeto <span class="selected">Book</span>).
 * **View Binding:** Para interactuar con los elementos de la interfaz de usuario (<span class="selected">TextViews</span>, <span class="selected">ImageViews</span>, etc.), se usó  **View Binding**. Esto elimina la necesidad de **<span class="selected">findViewById</span>**, reduciendo la posibilidad de errores y haciendo el código más conciso.
 * **Flujo de Navegación Personalizado:** Se implementó una lógica de navegación manual en la <span class="selected">MainActivity</span> para controlar la pila de navegación (<span class="selected">back stack</span>). Esto permite que los botones de la barra de navegación actúen como puntos de partida, asegurando que la aplicación no se "pierda" al cambiar entre vistas.
+* **Diagrama de Navegación** 
 <p float="left">
-  <img src="scrapbook/EvalM4_diagrama_clases.png" alt="Diagrama de clases" width="300"/>
-  <img src="scrapbook/EvalM4_digrama_nav.drawio.png" alt="Diagrama de navegación" width="300"/>
+  <img src="scrapbook/EvalM4_digrama_nav.drawio.png" alt="Diagrama de navegación" width="500"/>
 </p>
 
 ## 3. Guía de Ejecución del Proyecto
@@ -75,3 +75,7 @@
   * <span class="selected">nav.xml</span>: Define las transiciones y los destinos de los fragmentos.
 * <span class="selected">app/src/main/res/menu/</span>: Contiene el menú para la barra de navegación.
   * <span class="selected">menu_bottom_nav.xml</span>: Define los íconos y títulos de la barra de navegación inferior.
+* **Diagrama de clases**
+* <p float="left">
+  <img src="scrapbook/EvalM4_diagrama_clases.png" alt="Diagrama de clases" width="300"/>
+</p> 
