@@ -75,6 +75,108 @@
 * <span class="selected">app/src/main/res/menu/</span>: Contiene el menú para la barra de navegación.
   * <span class="selected">menu_bottom_nav.xml</span>: Define los íconos y títulos de la barra de navegación inferior.
 * **Diagrama de clases**
-* <p float="left">
+<p float="left">
   <img src="scrapbook/EvalM4_diagrama_clases.png" alt="Diagrama de clases" width="300"/>
 </p> 
+
+## 5. Tecnologías Utilizadas
+* **IDE:** Android Studio (Narwhal 3, basado en IntelliJ IDEA)
+* **Lenguaje:** Java v21
+* **Frameworks y librerías principales:** Jetpack, Navigation, Material.
+* **Otras tecnologías:** Git, Github, Github Desktop.
+* **API Mínima:** 33 
+* **API Objetivo:** 36
+
+## Instalación y Configuración
+
+1. **Clonar el repositorio:**
+
+   ```bash
+
+   https://github.com/jcordovaj/EvalM7.git
+   
+   ```
+
+2. **Crear un entorno virtual:**
+
+   * En Linux/macOS
+
+   ```bash
+   
+   python -m venv venv_lab
+   
+   source venv_lab/bin/activate  
+   
+   ```
+
+   * En Windows
+
+   ```bash
+   
+   python -m venv venv_lab
+   
+   venv_lab\Scripts\activate 
+   
+   ```
+
+3. **Instalar las dependencias:**
+
+   ```bash
+   
+   pip install -r requirements.txt
+   
+   ```
+
+4. **Configurar la base de datos:**
+
+   * Crear usuario : userdjango
+   * Password      : userdjango
+
+   ```sql
+   
+   CREATE ROLE userdjango WITH LOGIN
+      SUPERUSER
+      CREATEDB
+      CREATEROLE
+      INHERIT
+      NOREPLICATION
+      BYPASSRLS
+    CONNECTION LIMIT -1
+    PASSWORD 'userdjango';
+   
+   ```
+
+   * Crear BBDD
+
+   Nombre: db_final_orm
+   Usuario: userdjango (superuser)
+   pass: userdjango
+   collation: Spanish_spain.1252
+
+5. **Ejecutar la aplicación:**
+
+   ```bash
+   
+   python manage.py runserver
+   
+   ```
+
+6. **Administrador del Sistema**
+
+   * Administrador = Admin
+   * Password      = 123456
+
+7. **Generación de usuarios de prueba**
+
+   Se ha empleado la siguiente nomenclatura para crear los usuarios de prueba.
+   * user: usuarioX (X=Un número entero positivo correlativo)
+   * correo: [usuarioX@usuarioX.com](mailto:usuarioX@usuarioX.com)
+   * pass: clavefacil1234
+
+## Contribución (Things-To-Do)
+
+Se puede contribuir con los problemas o nuevas ideas, por favor respetar el estilo de programación y no subir código basura. Puede utilizar: forking del repositorio, crear pull requests, etc. Toda contribución es bienvenida.
+
+## Licencia
+
+Proyecto con fines educativos, Licencia MIT
