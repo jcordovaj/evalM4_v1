@@ -1,8 +1,65 @@
-# EVALUACIÓN FINAL MÓDULO 4: DESARROLLO DE LA INTERFAZ DE USUARIO ANDROID
-
-## Guía del Proyecto: Aplicación de Libros
+# EVALUACIÓN FINAL MÓDULO 4: DESARROLLO DE LA INTERFAZ DE USUARIO ANDROID - APLICACIÓN LIBROS
 
 **Este documento proporciona una guía completa sobre la aplicación de Libros, desarrollada en Android. Aquí encontrarás una explicación paso a paso de su estructura, funcionamiento, y los conceptos de diseño aplicados.**
+
+## 1. Requerimientos del Caso:
+
+* **Contexto y Configuración de un Nuevo Proyecto:**
+
+* **Paso 1:** Crear el repo usando Github Desktop.
+<p float="left">
+  <img src="scrapbook/crearRepo_GithubDesktop.PNG" alt="Diagrama de navegación" width="500"/>
+</p>
+  
+
+Para configurar un nuevo proyecto en Android Studio, el procedimiento estándar es sencillo y se centra en establecer una base sólida para el desarrollo.
+
+Abrir Android Studio y Seleccionar un Nuevo Proyecto: Al iniciar el IDE, se elige la opción "New Project". Esto abre un asistente que guía al usuario a través de varias plantillas.
+
+Selección de la Plantilla: Para una aplicación nativa desde cero, se elige la plantilla "Empty Views Activity". Esta plantilla es la opción ideal, ya que proporciona una estructura de proyecto minimalista con una MainActivity y su respectivo archivo de diseño en XML (activity_main.xml), lo que permite un control total sobre la arquitectura de la interfaz de usuario.
+
+Configuraciones Esenciales: Una vez seleccionada la plantilla, se establecen tres configuraciones cruciales en el asistente:
+
+Nombre de la Aplicación y del Paquete: Se asigna un nombre visible para los usuarios (por ejemplo, "Aplicación de Libros") y un nombre de paquete único que identifica la aplicación en la tienda de aplicaciones (por ejemplo, com.evalfinal.books2).
+
+Versión Mínima del SDK (MinSDK): Se especifica la versión más antigua de Android con la que la aplicación será compatible. Se eligió la API 33 (Tiramisu), ya que permite el uso de características modernas de Material Design 3 y, a la vez, cubre a un porcentaje significativo de dispositivos del mercado, asegurando un equilibrio entre modernidad y compatibilidad. Esta configuración se refleja en el archivo build.gradle.kts del módulo de la aplicación.
+
+Lenguaje de Programación: Se selecciona el lenguaje de programación principal. Para este proyecto, se optó por Java, dado su soporte maduro y su uso generalizado en la comunidad de desarrollo de Android.
+
+c) Manejo y Optimización de Assets y Recursos
+La gestión de assets en Android es fundamental para garantizar que la aplicación sea eficiente y visualmente atractiva en una amplia variedad de dispositivos. Los recursos se almacenan en directorios específicos dentro de la carpeta res/:
+
+Imágenes (res/drawable/ y res/mipmap/):
+
+res/drawable/ se usa para imágenes que se utilizan dentro de la interfaz de usuario (como las portadas de los libros).
+
+res/mipmap/ se utiliza para los íconos de la aplicación que se muestran en el lanzador del dispositivo.
+
+Diseños (res/layout/): Contiene los archivos XML que definen la estructura y el diseño de la interfaz de usuario.
+
+La optimización de los assets es un paso crítico en el proceso de desarrollo. Es importante por las siguientes razones:
+
+Rendimiento y Consumo de Memoria: Utilizar imágenes no optimizadas o de alta resolución innecesariamente puede causar problemas de rendimiento, como el consumo excesivo de memoria RAM, lo que puede llevar a errores de OutOfMemoryError y a cierres inesperados de la aplicación.
+
+Tamaño de la APK: Los assets grandes y sin comprimir aumentan el tamaño del archivo de la aplicación (APK), lo que puede desalentar a los usuarios de descargarla, especialmente si tienen conexiones lentas o espacio de almacenamiento limitado.
+
+Experiencia de Usuario: Una aplicación lenta en cargar recursos ofrece una experiencia de usuario deficiente. La optimización asegura que la interfaz se muestre de forma fluida y rápida en todos los dispositivos.
+
+Para optimizar, se recomienda utilizar herramientas de compresión de imágenes, convertir imágenes al formato WebP y proporcionar diferentes versiones de un mismo recurso para distintas densidades de pantalla (mdpi, hdpi, xhdpi, etc.).
+
+d) Gestión del Código Fuente con GitHub
+La gestión del código fuente en este proyecto se llevó a cabo utilizando Git y GitHub para asegurar un control de versiones robusto y mantener el repositorio en un estado óptimo.
+
+Repositorio Remoto: El proyecto se aloja en un repositorio remoto de GitHub, lo que facilita el seguimiento de los cambios y la colaboración.
+
+Rama Principal (main): Se utilizó una única rama principal llamada main. Dado que este es un proyecto de desarrollo individual, una rama única es suficiente para mantener un historial de código lineal y evitar la complejidad de fusionar múltiples ramas.
+
+Prácticas de Seguridad y Mantenimiento:
+
+.gitignore: El archivo .gitignore es un componente esencial para la seguridad del repositorio. Se configuró para excluir archivos generados automáticamente por el IDE (como archivos de compilación, caché y de depuración) y así evitar subir información sensible o innecesaria. Esto mantiene el repositorio limpio y liviano.
+
+Commits Atómicos y Descriptivos: Se realizaron commits pequeños y significativos, cada uno con un mensaje descriptivo que explicaba el propósito de los cambios. Esta práctica hace que sea fácil revisar el historial del proyecto y revertir a una versión anterior si es necesario.
+
 
 ## 1. Funcionamiento de la Aplicación
 
@@ -128,10 +185,10 @@ e.2. Haga click en el botón "Run 'app'" (el triángulo verde en la parte superi
 
 e.3. Si todo ha sido configurado correctamente, la aplicación se instalará en el dispositivo y se iniciará automáticamente, mostrando la pantalla de inicio.
 
-## Contribuciones (Things-To-Do)
+## 8. Contribuciones (Things-To-Do)
 
 Se puede contribuir reportando problemas o con nuevas ideas, por favor respetar el estilo de programación y no subir código basura. Puede utilizar: forking del repositorio, crear pull requests, etc. Toda contribución es bienvenida.
 
-## Licencia
+## 9. Licencia
 
 Proyecto con fines educativos, Licencia MIT
