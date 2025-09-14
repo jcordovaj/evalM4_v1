@@ -51,7 +51,7 @@
 - **Elementos de Configuración del Proyecto:**
 
     * **Manejo y Optimización de Assets y Recursos:**
-        En Android, la gestión de los **'assets'**, es fundamental para garantizar que la aplicación sea eficiente y visualmente atractiva en una amplia variedad de       dispositivos. Los recursos se almacenan en directorios específicos dentro de la carpeta res/:
+        - En Android, la gestión de los **'assets'**, es fundamental para garantizar que la aplicación sea eficiente y visualmente atractiva en una amplia variedad de       dispositivos. Los recursos se almacenan en directorios específicos dentro de la carpeta res/:
           + Imágenes (res/drawable/ y res/mipmap/):
               + res/drawable/ se usa para imágenes que se utilizan dentro de la interfaz de usuario (como las portadas de los libros).
               + res/mipmap/ se utiliza para los íconos de la aplicación que se muestran en el lanzador del dispositivo.
