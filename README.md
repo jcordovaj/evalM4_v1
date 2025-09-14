@@ -44,9 +44,9 @@
 
    - **Paso 7:** Sobre el recurso “menu” + botón derecho, elegir “New resource File”, para crear la barra de navegación.
 <p float="center">
-  <img src="scrapbook/CrearBarraNavegacion.png" alt="Verificar configuración inicial del Manifest" width="300"/>
-  <img src="scrapbook/CrearBarraNavegacion2.png" alt="Verificar configuración inicial del Manifest" width="300"/> 
-  <img src="scrapbook/CrearBarraNavegacion3.png" alt="Verificar configuración inicial del Manifest" width="300"/>  
+  <img src="scrapbook/CrearBarraNavegacion.png" alt="Verificar configuración inicial del Manifest" width="600"/>
+  <img src="scrapbook/CrearBarraNavegacion2.png" alt="Verificar configuración inicial del Manifest" width="600"/> 
+  <img src="scrapbook/CrearBarraNavegacion3.png" alt="Verificar configuración inicial del Manifest" width="600"/>  
 </p>
 
 c) Manejo y Optimización de Assets y Recursos
