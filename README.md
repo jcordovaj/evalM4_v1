@@ -1,6 +1,6 @@
-# EVALUACIÓN FINAL MÓDULO 4: DESARROLLO DE LA INTERFAZ DE USUARIO ANDROID - APLICACIÓN LIBROS
+# EVALUACIÓN FINAL MÓDULO 4: DESARROLLO DE UNA INTERFAZ DE USUARIO ANDROID - APLICACIÓN LIBROS
 
-**Este documento proporciona una guía completa sobre la aplicación de Libros, desarrollada en Android. Aquí encontrarás una explicación paso a paso de su estructura, funcionamiento, y los conceptos de diseño aplicados.**
+**Este documento proporciona una guía completa sobre la aplicación de Libros, desarrollada en Android. Aquí encontrará una explicación paso a paso de su estructura, funcionamiento, y los conceptos de diseño aplicados.**
 
 ## 1. Requerimientos del Caso
 
@@ -23,33 +23,38 @@
     - Nombre de la Aplicación y del Paquete: Se asigna un nombre visible para los usuarios (por ejemplo, "Buscador de Libros") y un nombre de paquete único que identifica la aplicación en la tienda de aplicaciones (por ejemplo, com.evalfinal.books2).
     - Versión Mínima del SDK (MinSDK): Se especifica la versión más antigua de Android con la que la aplicación será compatible. Se eligió la API 33 (Tiramisu), ya que permite el uso de características modernas de Material Design 3 y, a la vez, cubre a un porcentaje significativo de dispositivos del mercado, asegurando un equilibrio entre modernidad y compatibilidad. Esta configuración se refleja en el archivo build.gradle.kts del módulo de la aplicación.
     - Lenguaje de Programación: Se selecciona el lenguaje de programación principal. Para este proyecto, se optó por Java, dado su soporte maduro y su uso generalizado en la comunidad de desarrollo de Android.
+
     <p float="center">
-      <img src="scrapbook/ConfigInicial.png" alt="Configuraciones básicas" width="500"/>
+        <img src="scrapbook/ConfigInicial.png" alt="Configuraciones básicas" width="500"/>
     </p>
 
   - **Paso 4:** Configuración inicial del “Manifest” (proyecto creado con sólo “MainActivity”, “activity_main”)
-  <p float="center">
-    <img src="scrapbook/ConfigInicialManifest.png" alt="Verificar configuración inicial del Manifest" width="500"/>
-  </p>
 
-  - **Paso 5:** Agregamos el recurso navigation, con nombre “nav”, y se agregan las librerías. \* Con estas acciones se crea un “New navigation resource file” que es el archivo nav.xml, dentro de la carpeta navigation.
-  <p float="center">
-    <img src="scrapbook/AgregarRecursoNavigation.png" alt="Crear recurso Directorio" width="500"/>
-    <img src="scrapbook/AgregarRecursoNavigation2.png" alt="Asignarle un nombre" width="500"/> 
-  </p>
+    <p float="center">
+        <img src="scrapbook/ConfigInicialManifest.png" alt="Verificar configuración inicial del Manifest" width="500"/>
+    </p>
+
+  - **Paso 5:** Agregamos el recurso navigation, con nombre “nav”, y se agregan las librerías. Con estas acciones se crea un “New navigation resource file” que es el archivo nav.xml, dentro de la carpeta navigation.
+
+    <p float="center">
+        <img src="scrapbook/AgregarRecursoNavigation.png" alt="Crear recurso Directorio" width="500"/>
+        <img src="scrapbook/AgregarRecursoNavigation2.png" alt="Asignarle un nombre" width="500"/> 
+    </p>
 
   - **Paso 6:** Crear carpeta “MENU” en “RES”.
-  <p float="center">
-    <img src="scrapbook/CrearRecursoMenu.png" alt="Verificar configuración inicial del Manifest" width="500"/>
-    <img src="scrapbook/CrearRecursoMenu2.png" alt="Verificar configuración inicial del Manifest" width="500"/> 
-  </p>
+
+    <p float="center">
+        <img src="scrapbook/CrearRecursoMenu.png" alt="Verificar configuración inicial del Manifest" width="500"/>
+        <img src="scrapbook/CrearRecursoMenu2.png" alt="Verificar configuración inicial del Manifest" width="500"/> 
+    </p>
 
   - **Paso 7:** Sobre el recurso “menu” + botón derecho, elegir “New resource File”, para crear la barra de navegación.
-  <p float="center">
-    <img src="scrapbook/CrearBarraNavegacion.png" alt="Verificar configuración inicial del Manifest" width="600"/>
-    <img src="scrapbook/CrearBarraNavegacion2.png" alt="Verificar configuración inicial del Manifest" width="600"/> 
-    <img src="scrapbook/CrearBarraNavegacion3.png" alt="Verificar configuración inicial del Manifest" width="600"/>  
-  </p>
+
+    <p float="center">
+        <img src="scrapbook/CrearBarraNavegacion.png" alt="Verificar configuración inicial del Manifest" width="600"/>
+        <img src="scrapbook/CrearBarraNavegacion2.png" alt="Verificar configuración inicial del Manifest" width="600"/> 
+        <img src="scrapbook/CrearBarraNavegacion3.png" alt="Verificar configuración inicial del Manifest" width="600"/>  
+    </p>
 
 - **Elementos de Configuración del Proyecto:**
 
@@ -68,12 +73,12 @@
 
   - **Gestión del Código Fuente usando GitHub/GitLab:**
 
-    - La gestión del código fuente en este proyecto, se llevó a cabo utilizando Git y GitHub para asegurar un control de versiones robusto y mantener el repositorio en un estado óptimo.
+    - La gestión del código fuente en este proyecto, se realizó a cabo utilizando Git y GitHub para asegurar un control de versiones robusto y mantener el repositorio en un estado óptimo.
       - Repositorio Remoto: El proyecto se aloja en un repositorio remoto de GitHub, lo que facilita el seguimiento de los cambios y la colaboración.
       - Rama Principal (main): Se utilizó una única rama principal llamada main. Dado que este es un proyecto de desarrollo individual, una rama única es suficiente para mantener un historial de código lineal y evitar la complejidad de fusionar múltiples ramas.
 
   - **Prácticas de Seguridad y Mantenimiento:**
-    - Uso de '.gitignore', básico para la seguridad del repositorio. Se configuró para excluir archivos generados automáticamente por el IDE (como archivos de compilación, caché y de depuración) y así evitar subir información sensible o innecesaria. Esto mantiene el repositorio limpio y liviano.
+    - Uso de '.gitignore', básico para la seguridad del repositorio. Se configuró para excluir archivos generados automáticamente por el IDE (como archivos de compilación, caché y depuración) y así evitar subir información sensible o innecesaria. Esto mantiene el repositorio limpio y liviano.
     - Commits periódicos: Se intentó realizar commits pequeños y significativos, cada uno con un mensaje descriptivo que explicaba el propósito de los cambios. Esto permite revisar el historial del proyecto y hacer un roll-back, si es necesario.
 
 ## 2. Funcionamiento de la Aplicación
@@ -93,7 +98,7 @@
   <img src="scrapbook/vista_detalle_libro1.png" alt="Detalle libro 1" width="150"/>
   <img src="scrapbook/vista_detalle_libro2.png" alt="Detalle libro 2" width="150"/>
   <img src="scrapbook/vista_detalle_libro3.png" alt="Detalle libro 3" width="150"/>
-  <img src="scrapbook/vista_creditos.png" alt="Credito con logo y dearrollador" width="150"/>
+  <img src="scrapbook/vista_creditos.png" alt="Credito con logo y desarrollador" width="150"/>
 </p>
 
 ## 4. Conceptos de Diseño y Arquitectura
