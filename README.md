@@ -24,7 +24,7 @@
   <img src="scrapbook/vista_creditos.png" alt="Credito con logo y dearrollador" width="150"/>
 </p>
 
-## 2. Conceptos de Diseño y Arquitectura
+## 3. Conceptos de Diseño y Arquitectura
 
 **El desarrollo de esta aplicación se basó en el principio de separar la lógica de la interfaz de usuario, garantizando un código limpio, modular y fácil de mantener.**
 
@@ -37,7 +37,7 @@
   <img src="scrapbook/EvalM4_digrama_nav.drawio.png" alt="Diagrama de navegación" width="500"/>
 </p>
 
-## 3. Guía de Ejecución del Proyecto
+## 4. Guía de Ejecución del Proyecto
 
 **Para ejecutar este proyecto en tu entorno de desarrollo, sigue estos 'quick steps':**
 
@@ -53,7 +53,7 @@
 3. **Abrir la App:** Haz doble clic en el ícono "Books2".
 4. **Recorrer las opciones:** Cliquea en las opciones y podrás acceder al listado, el detalle o los créditos, regresando a cualquier punto de la app.
 
-## 4. Estructura del Proyecto
+## 5. Estructura del Proyecto
 
 **A continuación, se detalla la estructura principal del proyecto, con una breve descripción de cada archivo o carpeta.**
 
@@ -79,7 +79,7 @@
   <img src="scrapbook/EvalM4_diagrama_clases.png" alt="Diagrama de clases" width="300"/>
 </p> 
 
-## 5. Tecnologías Utilizadas
+## 6. Tecnologías Utilizadas
 * **IDE:** Android Studio (Narwhal 3, basado en IntelliJ IDEA)
 * **Lenguaje:** Java v21
 * **Frameworks y librerías principales:** Jetpack, Navigation, Material.
@@ -87,94 +87,50 @@
 * **API Mínima:** 33 
 * **API Objetivo:** 36
 
-## Instalación y Configuración
+## 7. Instalación y Configuración
 
-1. **Clonar el repositorio:**
+a. **Clonar el repositorio:**
 
    ```bash
    https://github.com/jcordovaj/evalM4_v1.git
    
    ```
 
-2. **Crear un entorno virtual:**
+b. **Abrir el Proyecto en Android Studio:**
 
-   * En Linux/macOS
+b.1. Abrir Android Studio.
 
-   ```bash
+b.2. En la pantalla de bienvenida, seleccionar **"Open an existing Android Studio project"** (Abrir un proyecto de Android Studio existente).
+
+b.3. Navegar a la carpeta donde se clonó el repositorio y seleccionarla. Android Studio detectará automáticamente el proyecto de Gradle y comenzará a indexar los archivos.
+
+c. **Sincronizar Gradle:**
    
-   python -m venv venv_lab
-   
-   source venv_lab/bin/activate  
-   
-   ```
+c.1. Este es el paso más importante. Después de abrir el proyecto, Android Studio intentará sincronizar la configuración de Gradle. Esto significa que descargará todas las librerías, dependencias y plugins necesarios para construir la aplicación. Normalmente, una barra de progreso se mostrará en la parte inferior de la consola de Android Studio con un mensaje como **"Gradle Sync in progress"**.
 
-   * En Windows
+c.2. Si no se inicia, o si el proceso falla, intente con el botón **"Sync Project with Gradle Files"** en la barra de herramientas. Es el icono con el **"elefante" de Gradle**.  Eso forzará la sincronización. 
 
-   ```bash
-   
-   python -m venv venv_lab
-   
-   venv_lab\Scripts\activate 
-   
-   ```
+c.3. Esperar que el proceso de sincronización termine. De haber errores, puede ser por problemas en la configuración de Android u otros conflictos, la aplicación debe descargar lo que requiera y poder ser ejecutada "AS-IS".
 
-3. **Instalar las dependencias:**
+d. **Configurar el Dispositivo o Emulador:**
 
-   ```bash
-   
-   pip install -r requirements.txt
-   
-   ```
+Para ejecutar la aplicación, se requiere un dispositivo Android, puedes usarse el emulador virtual o un dispositivo físico.
 
-4. **Configurar la base de datos:**
+d.1. Emulador: En la barra de herramientas, haga click en el botón del "AVD Manager" (Android Virtual Device Manager), que es el icono de un teléfono móvil con el logo de Android. Desde ahí, puedes crear un nuevo emulador con la versión de Android que prefiera (Nota: Debe considerar que cada celular emulado, puede requerir más de 1GB de espacio en disco y recursos de memoria).
 
-   * Crear usuario : userdjango
-   * Password      : userdjango
+d.2. Dispositivo físico: Conecte su teléfono Android a la computadora con un cable USB (también puede ser por WI-FI). Asegúrese de que las **Opciones de desarrollador y la Depuración por USB** estén habilitadas en tu dispositivo. Consulte a su fabricante para activar estas opciones.
 
-   ```sql
-   
-   CREATE ROLE userdjango WITH LOGIN
-      SUPERUSER
-      CREATEDB
-      CREATEROLE
-      INHERIT
-      NOREPLICATION
-      BYPASSRLS
-    CONNECTION LIMIT -1
-    PASSWORD 'userdjango';
-   
-   ```
+e. **Ejecutar la aplicación:**
 
-   * Crear BBDD
+e.1. Seleccione el dispositivo o emulador deseado en la barra de herramientas del emulador.
 
-   Nombre: db_final_orm
-   Usuario: userdjango (superuser)
-   pass: userdjango
-   collation: Spanish_spain.1252
+e.2. Haga click en el botón "Run 'app'" (el triángulo verde en la parte superior, o vaya al menu "RUN") para iniciar la compilación y el despliegue de la aplicación, puede tardar algunos minutos, dependiendo de su computador.
 
-5. **Ejecutar la aplicación:**
+e.3. Si todo ha sido configurado correctamente, la aplicación se instalará en el dispositivo y se iniciará automáticamente, mostrando la pantalla de inicio.
 
-   ```bash
-   
-   python manage.py runserver
-   
-   ```
+## Contribuciones (Things-To-Do)
 
-6. **Administrador del Sistema**
-
-   * Administrador = Admin
-   * Password      = 123456
-
-7. **Generación de usuarios de prueba**
-
-   Se ha empleado la siguiente nomenclatura para crear los usuarios de prueba.
-   * user: usuarioX (X=Un número entero positivo correlativo)
-   * correo: [usuarioX@usuarioX.com](mailto:usuarioX@usuarioX.com)
-   * pass: clavefacil1234
-
-## Contribución (Things-To-Do)
-
-Se puede contribuir con los problemas o nuevas ideas, por favor respetar el estilo de programación y no subir código basura. Puede utilizar: forking del repositorio, crear pull requests, etc. Toda contribución es bienvenida.
+Se puede contribuir reportando problemas o con nuevas ideas, por favor respetar el estilo de programación y no subir código basura. Puede utilizar: forking del repositorio, crear pull requests, etc. Toda contribución es bienvenida.
 
 ## Licencia
 
