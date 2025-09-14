@@ -2,27 +2,30 @@
 
 **Este documento proporciona una guía completa sobre la aplicación de Libros, desarrollada en Android. Aquí encontrarás una explicación paso a paso de su estructura, funcionamiento, y los conceptos de diseño aplicados.**
 
-## 1. Requerimientos del Caso:
+## 1. Requerimientos del Caso
 
 - **Establecer el Contexto del Proyecto:**
 
   - **Paso 1:** Crear el repo usando Github Desktop.
+
   <p float="center">
     <img src="scrapbook/crearRepo_GithubDesktop.PNG" alt="Crear Repo" width="500"/>
   </p>
 
-  - **Paso 2:** Para configurar un nuevo proyecto en Android Studio, elige la opción "New Project". Esto abre un asistente que guía al usuario a través de varias plantillas.
-  Para una aplicación nativa desde cero, se elige la plantilla **"Empty Views Activity"**. Esta plantilla proporciona una estructura de proyecto minimalista con una MainActivity y su respectivo archivo de diseño en XML (activity_main.xml), lo que permite un control total sobre la arquitectura de la interfaz de usuario.
+  - **Paso 2:** Para configurar un nuevo proyecto en Android Studio, elige la opción "New Project". Esto abre un asistente que guía al usuario a través de varias plantillas. Para una aplicación nativa desde cero, se elige la plantilla **"Empty Views Activity"**. Esta plantilla, proporciona una estructura de proyecto minimalista con una 'MainActivity' y su respectivo archivo de diseño en XML (activity_main.xml), lo que permite un control total sobre la arquitectura de la interfaz de usuario.
+
   <p float="center">
     <img src="scrapbook/CrearProyectoDesdeActividadVacia.png" alt="Crear Empty View" width="500"/>
   </p>
 
   - **Paso 3:** Configuración inicial. Una vez seleccionada la plantilla, se establecen tres configuraciones básicas en el asistente.
-  _ Nombre de la Aplicación y del Paquete: Se asigna un nombre visible para los usuarios (por ejemplo, "Buscador de Libros") y un nombre de paquete único que identifica la aplicación en la tienda de aplicaciones (por ejemplo, com.evalfinal.books2).
-  _ Versión Mínima del SDK (MinSDK): Se especifica la versión más antigua de Android con la que la aplicación será compatible. Se eligió la API 33 (Tiramisu), ya que permite el uso de características modernas de Material Design 3 y, a la vez, cubre a un porcentaje significativo de dispositivos del mercado, asegurando un equilibrio entre modernidad y compatibilidad. Esta configuración se refleja en el archivo build.gradle.kts del módulo de la aplicación. \* Lenguaje de Programación: Se selecciona el lenguaje de programación principal. Para este proyecto, se optó por Java, dado su soporte maduro y su uso generalizado en la comunidad de desarrollo de Android.
-  <p float="center">
-    <img src="scrapbook/ConfigInicial.png" alt="Configuraciones básicas" width="500"/>
-  </p>
+
+    - Nombre de la Aplicación y del Paquete: Se asigna un nombre visible para los usuarios (por ejemplo, "Buscador de Libros") y un nombre de paquete único que identifica la aplicación en la tienda de aplicaciones (por ejemplo, com.evalfinal.books2).
+    - Versión Mínima del SDK (MinSDK): Se especifica la versión más antigua de Android con la que la aplicación será compatible. Se eligió la API 33 (Tiramisu), ya que permite el uso de características modernas de Material Design 3 y, a la vez, cubre a un porcentaje significativo de dispositivos del mercado, asegurando un equilibrio entre modernidad y compatibilidad. Esta configuración se refleja en el archivo build.gradle.kts del módulo de la aplicación.
+    - Lenguaje de Programación: Se selecciona el lenguaje de programación principal. Para este proyecto, se optó por Java, dado su soporte maduro y su uso generalizado en la comunidad de desarrollo de Android.
+    <p float="center">
+      <img src="scrapbook/ConfigInicial.png" alt="Configuraciones básicas" width="500"/>
+    </p>
 
   - **Paso 4:** Configuración inicial del “Manifest” (proyecto creado con sólo “MainActivity”, “activity_main”)
   <p float="center">
