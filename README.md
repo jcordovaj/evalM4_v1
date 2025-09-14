@@ -30,10 +30,17 @@
 </p>
 
    - **Paso 5:** Agregamos el recurso navigation, con nombre “nav”, y se agregan las librerías.
-     Con estas acciones se crea un “New navigation resource file” que es el archivo nav.xml, dentro de la carpeta navigation.
+     * Con estas acciones se crea un “New navigation resource file” que es el archivo nav.xml, dentro de la carpeta navigation.
 <p float="center">
-  <img src="scrapbook/AgregarRecursoNavigation.png" alt="Verificar configuración inicial del Manifest" width="500"/>
-  <img src="scrapbook/AgregarRecursoNavigation2.png" alt="Verificar configuración inicial del Manifest" width="500"/> 
+  <img src="scrapbook/AgregarRecursoNavigation.png" alt="Crear recurso Directorio" width="500"/>
+  <img src="scrapbook/AgregarRecursoNavigation2.png" alt="Asignarle un nombre" width="500"/> 
+</p>
+
+   - **Paso 6:** Crear carpeta “MENU” en “RES”.
+
+<p float="center">
+  <img src="scrapbook/CrearRecursoMenu.png" alt="Verificar configuración inicial del Manifest" width="500"/>
+  <img src="scrapbook/CrearRecursoMenu2.png" alt="Verificar configuración inicial del Manifest" width="500"/> 
 </p>
 
 
