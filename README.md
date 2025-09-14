@@ -12,13 +12,13 @@
 </p>
   
    - **Paso 2:** Para configurar un nuevo proyecto en Android Studio, elige la opción "New Project". Esto abre un asistente que guía al usuario a través de varias plantillas.
-     * Para una aplicación nativa desde cero, se elige la plantilla **"Empty Views Activity"**. Esta plantilla proporciona una estructura de proyecto minimalista con una MainActivity y su respectivo archivo de diseño en XML (activity_main.xml), lo que permite un control total sobre la arquitectura de la interfaz de usuario.
+     Para una aplicación nativa desde cero, se elige la plantilla **"Empty Views Activity"**. Esta plantilla proporciona una estructura de proyecto minimalista con una MainActivity y su respectivo archivo de diseño en XML (activity_main.xml), lo que permite un control total sobre la arquitectura de la interfaz de usuario.
 <p float="center">
   <img src="scrapbook/CrearProyectoDesdeActividadVacia.png" alt="Crear Empty View" width="500"/>
 </p>
 
    - **Paso 3:** Configuración inicial. Una vez seleccionada la plantilla, se establecen tres configuraciones básicas en el asistente.
-     * Nombre de la Aplicación y del Paquete: Se asigna un nombre visible para los usuarios (por ejemplo, "Aplicación de Libros") y un nombre de paquete único que identifica la aplicación en la tienda de aplicaciones (por ejemplo, com.evalfinal.books2).
+     Nombre de la Aplicación y del Paquete: Se asigna un nombre visible para los usuarios (por ejemplo, "Aplicación de Libros") y un nombre de paquete único que identifica la aplicación en la tienda de aplicaciones (por ejemplo, com.evalfinal.books2).
      * Versión Mínima del SDK (MinSDK): Se especifica la versión más antigua de Android con la que la aplicación será compatible. Se eligió la API 33 (Tiramisu), ya que permite el uso de características modernas de Material Design 3 y, a la vez, cubre a un porcentaje significativo de dispositivos del mercado, asegurando un equilibrio entre modernidad y compatibilidad. Esta configuración se refleja en el archivo build.gradle.kts del módulo de la aplicación.
      * Lenguaje de Programación: Se selecciona el lenguaje de programación principal. Para este proyecto, se optó por Java, dado su soporte maduro y su uso generalizado en la comunidad de desarrollo de Android. 
 <p float="center">
